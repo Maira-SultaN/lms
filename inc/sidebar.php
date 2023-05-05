@@ -1,3 +1,10 @@
+<?php if (!empty($_REQUEST['nav'])) {
+	$get_nav=$_REQUEST['nav'];
+}else{
+	$get_nav='home';
+} 
+	$page="pages/".$get_nav.".php";
+?>
 <!-- ======= Sidebar ======= -->
 <aside id="sidebar" class="sidebar">
 
@@ -16,23 +23,28 @@
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
 
             <li>
-                <a href="course.php">
+                <a href="dashboard.php?nav=course">
                     <i class="bi bi-circle"></i><span>Courses</span>
                 </a>
             </li>
             <li>
-                <a href="batch.php">
+                <a href="dashboard.php?nav=batch">
                     <i class="bi bi-circle"></i><span>Batch</span>
                 </a>
             </li>
             <li>
-                <a href="student.php">
+                <a href="dashboard.php?nav=student">
                     <i class="bi bi-circle"></i><span>Students</span>
                 </a>
             </li>
             <li>
-                <a href="teacher.php">
+                <a href="dashboard.php?nav=teacher">
                     <i class="bi bi-circle"></i><span>Teachers</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboard.php?nav=home">
+                    <i class="bi bi-circle"></i><span>home</span>
                 </a>
             </li>
 

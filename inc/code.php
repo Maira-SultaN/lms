@@ -32,7 +32,7 @@ if ($sql) {
   $title="Course Added";
  $msg="New course registered!";
  $sts="success";
-redirect("course.php", 5000);
+redirect("pages/course.php", 5000);
 }
  else{
 echo mysqli_error($conn);
@@ -44,7 +44,7 @@ echo mysqli_error($conn);
       $title="Course Updated";
       $msg="New course Updated!";
       $sts="success";
-    redirect("course.php", 5000);
+    redirect("pages/course.php", 5000);
     
     } else{
     echo mysqli_error($conn);
@@ -61,7 +61,7 @@ if (isset($_REQUEST['delete_courses'])) {
     $title="Course Deleted";
     $msg="Selected Course Deleted!";
     $sts="danger";
-    redirect("course.php", 3000);
+    redirect("pages/course.php", 3000);
   }
 }
 
@@ -83,7 +83,7 @@ if ($sql) {
   $title="Batch Added";
   $msg="New Batch registered!";
   $sts="success";
-redirect("batch.php", 3000);
+redirect("pages/batch.php", 3000);
 }
  else{
 echo mysqli_error($conn);
@@ -95,7 +95,7 @@ echo mysqli_error($conn);
       $title="Batch Updated";
       $msg="New Batch Updated!";
       $sts="success";
-    redirect("batch.php", 3000);
+    redirect("pages/batch.php", 3000);
     
     } else{
     echo mysqli_error($conn);
@@ -112,7 +112,7 @@ if (isset($_REQUEST['delete_batch'])) {
     $title="Batch Deleted";
     $msg="Selected Batch Deleted!";
     $sts="danger";
-    redirect("batch.php", 1000);
+    redirect("pages/batch.php", 1000);
   }
 }
 
@@ -130,7 +130,7 @@ if ($sql) {
   $title="Student Added";
   $msg="New Student registered!";
   $sts="success";
-redirect("student.php", 3000);
+redirect("pages/student.php", 3000);
 }
  else{
 echo mysqli_error($conn);
@@ -142,7 +142,7 @@ echo mysqli_error($conn);
       $title="Student Updated";
       $msg="New Student Updated!";
       $sts="success";
-    redirect("student.php", 3000);
+    redirect("pages/student.php", 3000);
     
     } else{
     echo mysqli_error($conn);
@@ -159,7 +159,7 @@ if (isset($_REQUEST['delete_student'])) {
     $title="Student Deleted";
     $msg="Selected Student Deleted!";
     $sts="danger";
-    redirect("student.php", 3000);
+    redirect("pages/student.php", 3000);
   }
 }
 
@@ -178,7 +178,7 @@ if ($sql) {
   $title="Teacher Added";
   $msg="New Teacher registered!";
   $sts="success";
-redirect("teacher.php", 3000);
+redirect("pages/teacher.php", 3000);
 }
  else{
 echo mysqli_error($conn);
@@ -190,7 +190,7 @@ echo mysqli_error($conn);
       $title="Teacher Updated";
       $msg="New Teacher Updated!";
       $sts="success";
-    redirect("teacher.php", 3000);
+    redirect("pages/teacher.php", 3000);
     
     } else{
     echo mysqli_error($conn);
@@ -207,7 +207,7 @@ if (isset($_REQUEST['delete_teacher'])) {
     $title="Teacher Deleted";
     $msg="Selected Teacher Deleted!";
     $sts="danger";
-    redirect("teacher.php", 3000);
+    redirect("pages/teacher.php", 3000);
   }
 }
 ?>
